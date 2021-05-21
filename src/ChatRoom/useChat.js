@@ -11,15 +11,12 @@ const useChat = (username) => {
       socketRef.current = io("wss://tarea-3-websocket.2021-1.tallerdeintegracion.cl", {
         path: "/flights"
       });
-
-      // socketRef.current.on("POSITION", (data) => {
-      //   console.log(data);
-      // });
   
       socketRef.current.on(NEW_CHAT_MESSAGE_EVENT, (message) => {
+        
         const incomingMessage = {
           ...message,
-          ownedByCurrentUser: message.name === username,
+          ownedByCurrentUser: message.name === username //message.senderId === socketRef.current.id 
         };
         setMessages((messages) => [...messages, incomingMessage]);
       });

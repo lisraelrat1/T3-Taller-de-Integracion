@@ -1,0 +1,18 @@
+.flights-container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 68%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 16px;
+    width: 67%;
+    border: 1px solid black;
+    border-radius: 7px;
+    resize: none;
+}
+
+.info{
+    font-size: 12px;
+}

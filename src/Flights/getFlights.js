@@ -3,11 +3,16 @@ const io = require("socket.io-client");
 
 const FLIGHTS= "FLIGHTS";
 
-const getFlights = () => {
+const GetFlights = () => {
     const [flights, setFlights] = useState([]);
     const socketRef = useRef();
 
+    socketRef.current = io("wss://tarea-3-websocket.2021-1.tallerdeintegracion.cl", {
+        path: "/flights"
+      });
+
     useEffect(() => {
+
       socketRef.current.on(FLIGHTS, (vuelos) => {
         setFlights(vuelos);
       });
@@ -17,7 +22,7 @@ const getFlights = () => {
       };
     }, []);
 
-    const requestFlights = (messageBody) => {
+    const requestFlights = () => {
       socketRef.current.emit(FLIGHTS);
     };
     
@@ -25,4 +30,4 @@ const getFlights = () => {
     return {flights, requestFlights};
 };
 
-export default getFlights;
+export default GetFlights;
