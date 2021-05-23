@@ -23,7 +23,7 @@ const GetFlights = () => {
     }, []);
 
     const requestFlights = () => {
-      socketRef.current.emit(FLIGHTS);
+      socketRef.current.emit(FLIGHTS, {});
     };
     
   

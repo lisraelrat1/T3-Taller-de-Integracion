@@ -19,7 +19,7 @@ const Flights = (props) => {
 
   return (
     <div className="flights-container">
-      <Button onClick={bringFlights()} style={{height: '25%', margin: 'auto 5px ', backgroundColor: ' rgb(0, 132, 255)'}}>
+      <Button onClick={bringFlights} style={{height: '25%', margin: 'auto 5px ', backgroundColor: ' rgb(0, 132, 255)'}}>
         Traer Vuelos
       </Button>
         {flights.map(function(item,index){
