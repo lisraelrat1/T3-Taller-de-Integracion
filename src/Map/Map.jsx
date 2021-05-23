@@ -40,13 +40,6 @@ const Mapa = (props) => {
     iconSize: [25, 55],
   })
 
-  // const filtered = []
-  // if (flights) {
-  //   flights.map(flight =>
-  //     filtered.push([positions.filter(position => flight.code === position.code)])
-  // )}
-  // console.log(coords)
-
   return (
     <div className="map-container">
       {requestFlights}
@@ -55,8 +48,6 @@ const Mapa = (props) => {
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        
-        {/* <Polyline pathOptions={color[color.length * Math.random() | 0]} positions={coords} /> */}
 
         {polyline.map(element =>
         <div>
@@ -68,19 +59,11 @@ const Mapa = (props) => {
         )}
 
         {positions.map(position =>
-        <div>
-          {/* {console.log(position)}  */}
-          {/* <Marker icon={airplaneIcon} key={position.toString()} position={[position.position[0],position.position[1]]}>
-              {position.code && <Popup>
-                  <span>{position.code}</span>
-              </Popup>}
-          </Marker> */}
           <Marker position={[position.position[0],position.position[1]]} icon={new Icon({iconUrl: dotIcon, iconSize: [15, 15]})}>
               {position.code && <Popup>
                   <span>{position.code}</span>
               </Popup>}
           </Marker>
-        </div>
         )}
       </MapContainer>
       
