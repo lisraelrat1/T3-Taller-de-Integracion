@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/T3-Taller-de-Integracion/static/css/main.c32373db.chunk.css",
+    "main.js": "/T3-Taller-de-Integracion/static/js/main.bd4d1930.chunk.js",
+    "main.js.map": "/T3-Taller-de-Integracion/static/js/main.bd4d1930.chunk.js.map",
+    "runtime-main.js": "/T3-Taller-de-Integracion/static/js/runtime-main.f493d5d4.js",
+    "runtime-main.js.map": "/T3-Taller-de-Integracion/static/js/runtime-main.f493d5d4.js.map",
+    "static/css/2.c1e28d34.chunk.css": "/T3-Taller-de-Integracion/static/css/2.c1e28d34.chunk.css",
+    "static/js/2.34667733.chunk.js": "/T3-Taller-de-Integracion/static/js/2.34667733.chunk.js",
+    "static/js/2.34667733.chunk.js.map": "/T3-Taller-de-Integracion/static/js/2.34667733.chunk.js.map",
+    "static/js/3.bbf8f4cc.chunk.js": "/T3-Taller-de-Integracion/static/js/3.bbf8f4cc.chunk.js",
+    "static/js/3.bbf8f4cc.chunk.js.map": "/T3-Taller-de-Integracion/static/js/3.bbf8f4cc.chunk.js.map",
+    "index.html": "/T3-Taller-de-Integracion/index.html",
+    "static/css/2.c1e28d34.chunk.css.map": "/T3-Taller-de-Integracion/static/css/2.c1e28d34.chunk.css.map",
+    "static/css/main.c32373db.chunk.css.map": "/T3-Taller-de-Integracion/static/css/main.c32373db.chunk.css.map",
+    "static/js/2.34667733.chunk.js.LICENSE.txt": "/T3-Taller-de-Integracion/static/js/2.34667733.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f493d5d4.js",
+    "static/css/2.c1e28d34.chunk.css",
+    "static/js/2.34667733.chunk.js",
+    "static/css/main.c32373db.chunk.css",
+    "static/js/main.bd4d1930.chunk.js"
+  ]
+}
