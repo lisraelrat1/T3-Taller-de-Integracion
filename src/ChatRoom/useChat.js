@@ -9,7 +9,8 @@ const useChat = (username) => {
 
     useEffect(() => {
       socketRef.current = io("wss://tarea-3-websocket.2021-1.tallerdeintegracion.cl", {
-        path: "/flights"
+        path: "/flights",
+        transports: ['websocket']
       });
   
       socketRef.current.on(NEW_CHAT_MESSAGE_EVENT, (message) => {

@@ -27,7 +27,7 @@ const Flights = (props) => {
        <Card
         style={{
           width: 300,
-          height: 180,
+          height: "90%",
           margin: 10,
           backgroundColor: "#eeeeee",
           maxHeight: 200, 

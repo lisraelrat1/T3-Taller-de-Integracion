@@ -29,7 +29,6 @@ const Mapa = (props) => {
     coords.push(position.position)
   })
 
-
   return (
     <div className="map-container">
       {requestFlights}
@@ -55,6 +54,10 @@ const Mapa = (props) => {
               </Popup>}
           </Marker>
         )} */}
+      {positions.map(position =>
+      <Polyline pathOptions={{ color: 'red' }} positions={position} />
+      )}
+
       </MapContainer>
       
     </div>
