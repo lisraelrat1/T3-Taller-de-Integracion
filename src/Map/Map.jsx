@@ -10,10 +10,7 @@ import "leaflet/dist/leaflet.css"
 
 import markerIconPng from "leaflet/dist/images/marker-icon.png"
 import dotIcon from '../dot.svg'
-import Airplane from '../plane.svg'
 import {Icon} from 'leaflet'
-
-import L from 'leaflet';
 
 
 const Mapa = (props) => {
@@ -32,18 +29,11 @@ const Mapa = (props) => {
     coords.push(position.position)
   })
 
-  let airplaneIcon = L.icon({
-    iconUrl: Airplane,
-    iconRetinaUrl: Airplane,
-    iconAnchor: [5, 55],
-    popupAnchor: [10, -44],
-    iconSize: [25, 55],
-  })
 
   return (
     <div className="map-container">
       {requestFlights}
-      <MapContainer center={[-22.05, -60.99]} zoom={3} scrollWheelZoom={false} style={{height:480}}>
+      <MapContainer center={[-22.05, -60.99]} zoom={3} scrollWheelZoom={false} style={{height:450}}>
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -58,13 +48,13 @@ const Mapa = (props) => {
         </div>
         )}
 
-        {positions.map(position =>
-          <Marker position={[position.position[0],position.position[1]]} icon={new Icon({iconUrl: dotIcon, iconSize: [15, 15]})}>
+        {/* {positions.map(position =>
+          <Marker position={[position.position[0],position.position[1]]} icon={new Icon({iconUrl: dotIcon, iconSize: [25, 25]})}>
               {position.code && <Popup>
                   <span>{position.code}</span>
               </Popup>}
           </Marker>
-        )}
+        )} */}
       </MapContainer>
       
     </div>
